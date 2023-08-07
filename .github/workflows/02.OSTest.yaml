@@ -11,8 +11,8 @@ jobs:
   Job1:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Event Detected: ${{ github.event_name }}"
+      - run: echo Event Detected ${{ github.event_name }}
   Job2-Windows:
     runs-on: windows-latest
     steps:
-      - run: echo "Event Detected: ${{ github.event_name }}"
+      - run: echo Event Detected ${{ github.event_name }}
