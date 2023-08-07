@@ -1,0 +1,10 @@
+name: Sample GitHub Job
+on: [push]
+jobs:
+  Job1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Welcome to Ubuntu Server"
+      - run: pwd
+      - name: Checking reserved Github variable
+        run: ls ${{ github.workspace }}
